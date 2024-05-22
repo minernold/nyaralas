@@ -6,6 +6,8 @@ body {
     background-color: white;
     font-size: 18px;
     color: black;
+    max-width: 1400px;
+    margin: auto;
 }
 
 p {
@@ -13,8 +15,7 @@ p {
 }
 
 .head {
-    max-width: 1400px;
-    margin: auto;
+
 }
 
 img {
@@ -26,12 +27,12 @@ img {
 @keyframes welcome {
     0% {
         opacity: 0;
-        transform: matrix3D(X -100);
+        transform: matrix(X -100);
     }
 
     100% {
         opacity: 1;
-        transform: matrix3d(X 100);
+        transform: matrix(X 100);
     }
 }
 
@@ -41,7 +42,7 @@ img {
     }
 
     50% {
-        color: brown;
+        color: blue;
     }
 
     100% {
@@ -50,6 +51,14 @@ img {
 }
 
 .welcome {
-    animation: forwards welcome 3s;
-    animation: welcomeColor 5s forwards;
+    font-size: 28px;
+    animation-name: welcome;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.welcomeColor {
+    animation-name: welcomeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
