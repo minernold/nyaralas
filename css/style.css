@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+.head {
+    max-width: 1400px;
+    margin: auto;
+}
+
+img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        transform: matrix3D(X -100);
+    }
+
+    100% {
+        opacity: 1;
+        transform: matrix3d(X 100);
+    }
+}
+
+@keyframes welcomeColor {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: brown;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.welcome {
+    animation: forwards welcome 3s;
+    animation: welcomeColor 5s forwards;
+}
