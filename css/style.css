@@ -11,30 +11,49 @@ body {
     margin: auto;
 }
 
+.sav {
+    background-color: #e0f9ff;
+}
+
+.navbar {
+    background-color: #6de2fc;
+    height: 3rem;
+    max-width: 1200px;
+    flex-direction: row;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+}
+
 p {
     text-align: justify;
 }
 
 .head {
-
+    max-width: 1200px;
+    padding: 0;
 }
 
 img {
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 100px;
     border-radius: 10px;
-    margin: auto;
 }
 
 
 @keyframes welcome {
     0% {
         opacity: 0;
-        transform: matrix(X -100);
+        transform: translateX(-3%)
     }
 
     100% {
         opacity: 1;
-        transform: matrix(X 100);
+        transform: translateX(40%);
     }
 }
 
@@ -57,14 +76,20 @@ img {
     animation-name: welcome;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    max-width: 500px;
 }
 
 .welcomeColor {
     animation-name: welcomeColor;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
 .space {
     height: 100px;
+    max-width: 100px;
+}
+
+.content {
+    margin: 20px;
 }
