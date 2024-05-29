@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -21,6 +22,7 @@ p {
 img {
     max-width: 500px;
     border-radius: 10px;
+    margin: auto;
 }
 
 
