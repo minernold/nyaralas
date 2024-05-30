@@ -17,9 +17,11 @@ body {
 
 .navbar {
     background-color: #6de2fc;
-    height: 3rem;
+    height: fit-content;
+    min-height: 60px;
     max-width: 1200px;
     flex-direction: row;
+    margin: auto;
 }
 
 .navbar a {
@@ -49,12 +51,12 @@ img {
 @keyframes welcome {
     0% {
         opacity: 0;
-        transform: translateX(-3%)
+        transform: translateX(-3%);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(40%);
+        transform: translateX(100%);
     }
 }
 
@@ -77,7 +79,7 @@ img {
     animation-name: welcome;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    max-width: 300px;
+    width: fit-content;
 }
 
 .welcomeColor {
@@ -86,8 +88,12 @@ img {
     animation-iteration-count: infinite;
 }
 
+div li {
+    text-align: center;
+}
+
 .space {
-    height: 100px;
+    height: 80px;
     max-width: 100px;
 }
 
