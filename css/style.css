@@ -5,7 +5,7 @@ html {
 
 body {
     background-color: white;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     max-width: 1200px;
     margin: auto;
@@ -22,6 +22,7 @@ body {
     max-width: 1200px;
     flex-direction: row;
     margin: auto;
+    padding: 0;
 }
 
 .navbar a {
@@ -83,6 +84,7 @@ img {
 }
 
 .welcomeColor {
+    padding-top: 30px;
     animation-name: welcomeColor;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -93,7 +95,7 @@ div li {
 }
 
 .space {
-    height: 80px;
+    height: 30px;
     max-width: 100px;
 }
 
@@ -103,4 +105,14 @@ hr {
 
 .content {
     margin: 20px;
+}
+
+.hoverka {
+    background-color: #6de2fc;
+    transition: background-color linear 0.5s;
+}
+
+.hoverka:hover {
+    background-color: #4089ff;
+    transition: background-color 1s linear;
 }
