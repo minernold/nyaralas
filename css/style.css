@@ -117,3 +117,8 @@ hr {
     background-color: #4089ff;
     transition: background-color 1s linear;
 }
+
+.lab p {
+    text-align: center;
+    font-size: 30px;
+}
