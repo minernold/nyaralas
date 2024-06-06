@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    
 }
 
 body {
@@ -109,12 +108,12 @@ hr {
 
 .hoverka {
     background-color: #6de2fc;
-    transition: background-color linear 0.5s;
+    transition: background-color linear 0.7s;
 }
 
 .hoverka:hover {
     background-color: #4089ff;
-    transition: background-color 1s linear;
+    transition: background-color 0.35s linear;
 }
 
 .lab p {
@@ -126,8 +125,13 @@ hr {
     font-size: 18px;
     text-align: center;
     margin: auto;
+}
+
+.nameanimation a {
+    text-decoration: none;
+    font-weight: bold;
     animation-name: nameAnimation;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
@@ -137,6 +141,6 @@ hr {
     34% {color: purple;}
     51% {color: green;}
     68% {color: yellowgreen;}
-    85% {color: yellow;}
+    84% {color: orange;}
     100% {color: red;}   
 }
