@@ -121,3 +121,22 @@ hr {
     text-align: center;
     font-size: 30px;
 }
+
+.nameanimation {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    animation-name: nameAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nameAnimation {
+    0% {color: red;}
+    17% {color: blue;}
+    34% {color: purple;}
+    51% {color: green;}
+    68% {color: yellowgreen;}
+    85% {color: yellow;}
+    100% {color: red;}   
+}
